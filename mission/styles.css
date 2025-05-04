@@ -59,5 +59,24 @@ body {
     max-width: 150px;
     height: auto;
   }
+  body {
+    background-color: white;
+    color: black;
+  }
   
+  /* Dark theme */
+  body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+  body.dark .container {
+    border-color: #444;
+  }
+  
+  body.dark .intro,
+  body.dark .italic,
+  body.dark .mission-points {
+    color: #ddd;
+  }
   
