@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Review Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 1rem 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+    }
+    nav.filters {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      background: #eee;
+      flex-wrap: wrap;
+    }
+    .section {
+      margin: 2rem 0;
+    }
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      background: #fafafa;
+    }
+    .genres, .ages {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .genre-btn, .age-btn {
+      padding: 0.5rem 1rem;
+      background: #ddd;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    footer {
+      background: #f4f4f4;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📚 BookBuddy</div>
+    <input type="search" placeholder="Search books..." aria-label="Search books">
+    <a href="#">Login</a>
+  </header>
+
+  <nav class="filters">
+    <button>By Title</button>
+    <button>By Genre</button>
+    <button>By Age</button>
+    <button>By Rating</button>
+  </nav>
+
+  <main>
+    <section class="section" id="top-rated">
+      <h2>⭐ Top Rated This Week</h2>
+      <div class="cards">
+        <div class="card">
+          <p><strong>Book Title</strong></p>
+          <p>Rating: ★★★★★</p>
+          <p>Age: 10+</p>
+        </div>
+        <!-- more cards -->
+      </div>
+    </section>
+
+    <section class="section" id="latest-reviews">
+      <h2>🆕 Latest Reviews</h2>
+      <div class="cards">
+        <div class="card">
+          <p><strong>Book Title</strong></p>
+          <p>“Short review snippet here...”</p>
+          <p>Rating: ★★★★☆</p>
+        </div>
+        <!-- more cards -->
+      </div>
+    </section>
+
+    <section class="section" id="explore-genre">
+      <h2>📂 Explore by Genre</h2>
+      <div class="genres">
+        <a href="#" class="genre-btn">Fantasy</a>
+        <a href="#" class="genre-btn">Mystery</a>
+        <a href="#" class="genre-btn">Non-fiction</a>
+        <!-- more genres -->
+      </div>
+    </section>
+
+    <section class="section" id="explore-age">
+      <h2>👶 Explore by Age Group</h2>
+      <div class="ages">
+        <a href="#" class="age-btn">7–9</a>
+        <a href="#" class="age-btn">10–12</a>
+        <a href="#" class="age-btn">12–14</a>
+        <a href="#" class="age-btn">14–16</a>
+        <a href="#" class="age-btn">16+</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>💬 About This Site</h2>
+      <p>This site helps kids, parents, and educators discover great books with honest, thoughtful reviews from readers like you.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>📩 Subscribe to our newsletter</p>
+    <p>📱 Follow us on social media</p>
+    <p>Privacy | Terms | Contact</p>
+  </footer>
+
+</body>
+</html>
