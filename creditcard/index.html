@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Credit Card Form</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="credit card.webp" >
+</head>
+<body>
+  <main>
+    <form id="credit-card">
+      <div class="card-container">
+        <div class="card front">
+          <img class="card-image" src="data:image/svg+xml;base64,...(your SVG data here)..." height="55px" />
+          <label for="cardNumber">Card Number</label>
+          <input type="text" name="cardNumber" id="cardNumber" placeholder="1234 5678 9012 3456" required minlength="16" maxlength="16" />
+          <label for="cardName">Name on Card</label>
+          <input type="text" name="cardName" id="cardName" placeholder="John Doe" required />
+          <label for="expMonth">Exp. Month</label>
+          <input type="number" name="expMonth" id="expMonth" placeholder="MM" min="1" max="12" required />
+          <label for="expYear">Exp. Year</label>
+          <input type="number" name="expYear" id="expYear" placeholder="YYYY" required />
+        </div>
+
+        <div class="card back">
+          <div class="mag-strip"></div>
+          <label for="cvv">CVV</label>
+          <input type="text" name="cvv" id="cvv" placeholder="123" required minlength="3" maxlength="4" />
+        </div>
+      </div>
+
+      <p class="errorMsg"></p>
+      <button type="submit">Submit Payment</button>
+    </form>
+  </main>
+
+  <script src="credit card.webp"></script>
+</body>
+</html>
