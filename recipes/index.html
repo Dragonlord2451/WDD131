@@ -1,64 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A delicious recipe book for food lovers!" />
-  <meta property="og:title" content="Delicious Recipe Book">
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="A collection of simple and tasty recipes to try at home.">
-  <meta property="og:image" content="https://yourdomain.com/recipes/images/og-image.jpg">
-  <meta property="og:url" content="https://yourdomain.com/recipes/index.html">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Randomizer & Search</title>
   <link rel="stylesheet" href="recipes.css">
-  <script src="recipes.js" defer></script>
-  <title>Delicious Recipe Book</title>
 </head>
 <body>
   <header>
-    <img src="recipe book.jpg" alt="Delicious Recipe Book Logo" class="logo">
-    <h1>Delicious Recipe Book</h1>
+    <h1>Recipe Finder</h1>
   </header>
 
-  <main>
-    <form class="search-form">
-      <label for="search">Search Recipes:</label>
-      <input type="text" id="search" name="search" placeholder="e.g. pasta, chicken...">
+  <section class="search-section">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search recipes...">
+      <button type="submit" id="search-button">Search</button>
     </form>
+  </section>
 
-    <section id="recipes">
-      <article class="recipe-card">
-        <img src="spagetti bolognese.jpg" alt="Spaghetti Bolognese">
-        <h2>Spaghetti Bolognese</h2>
-        <p>A classic Italian pasta dish with a rich meat sauce, topped with Parmesan.</p>
-      </article>
-
-      <article class="recipe-card">
-        <img src="Chocolate Cake.jpg" alt="Chocolate Cake">
-        <h2>Chocolate Cake</h2>
-        <p>A rich and moist layered chocolate cake topped with creamy frosting.</p>
-      </article>
-    </section>
+  <main>
+    <div id="recipes" class="recipe-container">
+      <!-- Recipes will render here -->
+    </div>
   </main>
 
-  <footer>
-    <p style="font-size: 0.6em;">
-      <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
-        Recipe icons created by Freepik - Flaticon
-      </a>
-    </p>
-    <div class="social">
-      <a href="https://instagram.com/yourhandle" aria-label="Visit us on Instagram">
-        <img src="images/instagram_icon.svg" alt="Instagram icon">
-      </a>
-      <a href="https://youtube.com/yourchannel" aria-label="Visit us on YouTube">
-        <img src="images/youtube_icon.svg" alt="YouTube icon">
-      </a>
-      <a href="https://pinterest.com/yourprofile" aria-label="Visit us on Pinterest">
-        <img src="images/pinterest_icon.svg" alt="Pinterest icon">
-      </a>
-    </div>
-  </footer>
+  <script src="recipes.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

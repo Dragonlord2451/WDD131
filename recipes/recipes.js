@@ -1,47 +1,26 @@
 const recipes = [
   {
-    title: "Spaghetti Bolognese",
-    image: "images/spaghetti.jpg",
+    name: "Apple Crisp",
+    image: "apple crisp.jpg",
+    description: "This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.",
     rating: 4,
-    description: "A classic Italian pasta dish with rich meat sauce."
+    tags: ["Dessert", "Fruit"],
+    ingredients: ["Apples", "Sugar", "Oats"]
   },
   {
-    title: "Chocolate Cake",
-    image: "images/chocolate-cake.jpg",
+    name: "Spaghetti Carbonara",
+    image: "spagetti bolognese.jpg",
+    description: "Classic Italian pasta dish with eggs, cheese, pancetta, and pepper.",
     rating: 5,
-    description: "A moist and rich chocolate cake topped with ganache."
+    tags: ["Dinner", "Pasta"],
+    ingredients: ["Spaghetti", "Eggs", "Pancetta", "Parmesan"]
+  },
+  {
+    name: "Garden Salad",
+    image: "garden salad.jpg",
+    description: "A fresh garden salad with mixed greens, tomatoes, cucumbers, and your choice of dressing.",
+    rating: 3,
+    tags: ["Salad", "Healthy", "Vegetarian"],
+    ingredients: ["Lettuce", "Tomatoes", "Cucumber"]
   }
 ];
-
-function createRecipeCard(recipe) {
-  const card = document.createElement("div");
-  card.className = "recipe-card";
-
-  card.innerHTML = `
-    <img src="${recipe.image}" alt="${recipe.title}">
-    <div class="recipe-content">
-      <h2 class="recipe-title">${recipe.title}</h2>
-      <span class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
-        ${renderStars(recipe.rating)}
-      </span>
-      <p class="description">${recipe.description}</p>
-    </div>
-  `;
-
-  return card;
-}
-
-function renderStars(rating) {
-  let stars = "";
-  for (let i = 0; i < 5; i++) {
-    stars += `<span aria-hidden="true" class="${i < rating ? "icon-star" : "icon-star-empty"}">${i < rating ? "⭐" : "☆"}</span>`;
-  }
-  return stars;
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const section = document.getElementById("recipes");
-  recipes.forEach(recipe => {
-    section.appendChild(createRecipeCard(recipe));
-  });
-});
