@@ -1,44 +1,69 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YouTube Topic Search</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LoL Trainer</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <img src="site logo.jpg" alt="YouTube Topic Search Logo" class="logo" />
-    <h1>YouTube Topic Search</h1>
-    <h2>Find videos on your favorite topics</h2>
+    <h1>League of Legends Guide</h1>
+    <h2>Master Your Skills</h2>
+    <img src="photos/site logo.jpg" alt="League of Legends Banner" class="banner">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skill Videos</a>
+    </nav>
   </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="trending.html">Trending</a>
-    <a href="#">Contact</a>
-  </nav>
+  <main>
+    <section class="intro">
+      <h2>Welcome Summoner!</h2>
+      <p class="colored">Explore your favorite champions. Learn to dominate your lane and outplay your enemies!</p>
+      <a href="skills.html" class="cta-button">Start learning skills</a>
+    </section>
 
-  <!-- Home Page Content -->
-  <main class="container">
-    <p class="colored">
-      Enter a topic below to search YouTube for related videos:
-    </p>
-    <div class="search-box">
-      <input type="text" id="topicInput" placeholder="e.g. Cybersecurity careers" />
-      <button onclick="searchYouTube()">Search</button>
-    </div>
+    <hr>
+
+    <section class="explore">
+      <h2>Explore by Role</h2>
+      <div class="role-buttons">
+        <a href="skills.html" class="role-card">Mage</a>
+        <a href="skills.html" class="role-card">Fighter</a>
+        <a href="skills.html" class="role-card">Jungle</a>
+        <a href="skills.html" class="role-card">Support</a>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="featured">
+      <h2>Featured Champions</h2>
+      <div class="featured-champs">
+        <div class="champ-card">
+          <img src="photos/Ahri.jpg" alt="Ahri">
+          <h3>Ahri</h3>
+          <p>Deceptive and fast Mage. Learn to charm and burst enemies quickly.</p>
+        </div>
+        <div class="champ-card">
+          <img src="photos/LeeSin.jpg" alt="Lee Sin">
+          <h3>Lee Sin</h3>
+          <p>Highly mobile Jungler with flashy plays. Learn ward hops and combos.</p>
+        </div>
+        <div class="champ-card">
+          <img src="photos/Yasuo.jpg" alt="Yasuo">
+          <h3>Yasuo</h3>
+          <p>Crit-based Fighter with high outplay potential. Learn dashes and ults.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 YouTube Topic Search. All rights reserved.</p>
+    &copy; 2025 League Guide Hub | Crafted by Collin Olive
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
+
