@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Cottage | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Cookie Cottage</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero fade-in">
+    <h2>Warm. Fresh. Homemade Cookies.</h2>
+    <p>Baked daily in small batches for maximum deliciousness.</p>
+    <button onclick="scrollToFeatured()" class="cta-btn">See Our Cookies</button>
+
+    <img src="photos/cookie.jpg" class="cookie-bounce" alt="cookie">
+</section>
+
+<section class="featured-section fade-in" id="featured">
+    <h2>Featured Cookies</h2>
+
+    <div class="carousel">
+        <button class="carousel-btn left" onclick="slideLeft()">❮</button>
+
+        <div class="carousel-track">
+            <div class="card">
+                <img src="photos/cchip.jpg" alt="">
+                <h3>Chocolate Chip</h3>
+                <p>Our #1 best seller!</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1614707267537-f34c7ccdc19d" alt="">
+                <h3>Sugar Cookie</h3>
+                <p>Sweet, soft, and topped with frosting.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642" alt="">
+                <h3>Snickerdoodle</h3>
+                <p>A cinnamon classic.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1589985270826-4b62a3a67397" alt="">
+                <h3>Double Chocolate</h3>
+                <p>Chocolate lovers' favorite.</p>
+            </div>
+        </div>
+
+        <button class="carousel-btn right" onclick="slideRight()">❯</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Cookie Cottage. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
